@@ -1,0 +1,22 @@
+/* Variables CSS */
+
+:root {
+    /* Fonts */
+
+    --title-font: "Poppins", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+
+    /* Font Sizes - Converter em REM dps */
+    --h1: 40px;
+    --h2: 36px;
+    --h3: 20px;
+    --h6: 16px;
+
+    /* Colors */
+    --main: #7019da;
+    --black: #0e0e0e;
+    --dark: #1d1d1d;
+    --gray: #696969;
+    --light: #d6d6d6;
+    --white: #fff;
+}
