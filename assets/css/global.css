@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 
 * {
     box-sizing: border-box;
@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--font);
+    font-weight: 400;
     scroll-behavior: smooth;
     background-color: var(--black);
 }
@@ -16,20 +17,23 @@ h1,
 h2,
 h3,
 h6 {
-    font-family: var(--title-font);
-    line-height: 1.2;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--white-100);
+    line-height: 1.1;
 }
 
-p {
-    color: var(--light);
+p,
+span {
+    color: var(--white-100);
     line-height: 1.6;
 }
 
-span {
-    color: var(--light);
+a {
+    text-decoration: none;
 }
 
-/* Classes */
+/* CLASSES */
 
 .container {
     max-width: 1140px;
@@ -43,16 +47,27 @@ span {
     align-items: center;
 }
 
-/* End Classes */
+/* END CLASSES */
 
-/* Header */
+/* HEADER */
 .header {
     max-width: 1140px;
-    margin: 30px auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navbar */
+.header .logo a {
+    font-size: var(--h4);
+    color: var(--white-100);
+}
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -67,9 +82,23 @@ span {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--light);
+    color: var(--white-80);
 }
 
+.nav-links a:hover,
+.social-links a i:hover {
+    color: var(--white-100);
+}
 
+.social-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 12px;
+}
 
-/* End Header */
+.social-links a i {
+    color: var(--white-80);
+}
+
+/* END HEADER */

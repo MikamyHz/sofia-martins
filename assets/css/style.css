@@ -1,0 +1,23 @@
+/* OTHERS STYLES */
+::selection {
+    background: var(--white-60);
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    background: url("/assets/img/hero-bg.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: var(--display);
+}
+
+.hero-section span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: var(--p);
+}
